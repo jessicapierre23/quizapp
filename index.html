@@ -4,14 +4,23 @@
     <link type="text/css" rel="stylesheet" href="quizstyle.css"/>
     <title>Quiz Application</title>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script type="text/javascript" src = "quiz.js" ></script>
+    <script type="text/javascript" src = "quiz2.js" ></script>
 </head>
 <body>
-    <div id = "q1" name="q1">
-    <p>Who was the first president of the United States?</p>
+   <div id ="question-holder">
+   <!--question and answer choices wil appear here-->
+    </div>
+   
+   <div id="overallscore">
+	 <!--This is where the overall score message appears-->
+	 </div> 
+  
+  <!--
+    <div id = "q1" class="hidden">
+    <p>1 of 5: Who was the first president of the United States?</p>
     <form id="question1" action=" ">
      <label>
-      <input type="radio" name = "choices" value="George Washington" />  
+      <input type="radio" name ="choices" value="George Washington" />  
         George Washington </label> <br />
      <label> 
       <input type="radio" name="choices" value="John Quincy Adams" />  
@@ -19,14 +28,12 @@
         <label>
       <input type="radio" name="choices" value="Andrew Jackson" />  
         Andrew Jackson </label> <br />
-	  <input type="submit" name="submit" value="Submit" disabled="disabled" /><br/>
+	  <input type="submit" name="submit" value="Submit"  /><br/>
 	  </form>
-	  
-
-     </div>
+	  </div>
 	 
 	 <div id = "q2" class="hidden">
-    <p>Which president signed the Emancipation Proclamation?</p>
+    <p>2 of 5: Which president signed the Emancipation Proclamation?</p>
     <form id="question2" action=" ">
      <label>
       <input type="radio" name = "choices" value="Abraham Lincoln" />  
@@ -37,13 +44,13 @@
         <label>
       <input type="radio" name="choices" value="Herbert Hoover" />  
         Herbert Hoover </label> <br />
-		<input type="submit" name="submit" value="Submit" disabled="disabled" /><br/>
+		<input type="submit" name="submit" value="Submit"  /><br/>
       </form>
 	  
      </div>
 	 
 	 <div id = "q3" class="hidden">
-    <p>Who was the first Catholic president of the United States?</p>
+    <p>3 of 5: Who was the first Catholic president of the United States?</p>
     <form id="question3" action=" ">
      <label>
       <input type="radio" name = "choices" value="John F. Kennedy" />  
@@ -54,13 +61,13 @@
         <label>
       <input type="radio" name="choices" value="Ronald Regan" />  
         Ronald Regan </label> <br />
-		<input type="submit" name="submit" value="Submit" disabled="disabled" /><br/>
+		<input type="submit" name="submit" value="Submit"  /><br/>
       </form>
 	  
      </div>
 	 
 	 <div id = "q4" class="hidden">
-    <p>Which US president is credit with The Great Society?</p>
+    <p>4 of 5: Which US president is credit with The Great Society?</p>
     <form id="question4" action=" ">
      <label>
       <input type="radio" name = "choices" value="Lyndon B. Johnson" />  
@@ -71,13 +78,13 @@
         <label>
       <input type="radio" name="choices" value="Richard Nixon" />  
         Richard Nixon </label> <br />
-		<input type="submit" name="submit" value="Submit" disabled="disabled" /><br/>
+		<input type="submit" name="submit" value="Submit"  /><br/>
       </form>
 	  
      </div>
 	 
 	 <div id = "q5" class="hidden">
-    <p>What is the capital of the United States?</p>
+    <p>5 of 5: What is the capital of the United States?</p>
     <form id="question5" action=" ">
      <label>
       <input type="radio" name = "choices" value="Washington, DC" />  
@@ -88,12 +95,10 @@
         <label>
       <input type="radio" name="choices" value="Ashburn, VA" />  
         Ashburn, VA </label> <br />
-		<input type="submit" name="submit" value="Submit" disabled="disabled" /><br/>
+		<input type="submit" name="submit" value="Submit" /><br/>
       </form>
 	 
-     </div>
-	 <div id="overallscore">
-	 <!--This is where the overall score message appears-->
-	 </div>
+     </div> -->
+	 
 </body>
 </html>
