@@ -83,36 +83,48 @@ function getAnswer() {
        } //end if statement
       } //end for loop*/
 	 
-   $('.choices').click(function() {
+   $('input[type=submit]').click(function() {
    if($("input[type='radio'][name='choices']").is(':checked')) {
     selection = $("input[type='radio'][name='choices']:checked").val();
 	    
 		
-	
-	if (selection ==  questions[questionNum].options[questions[questionNum].correct])
+	if (questions[questionNum].options[selection] ==  questions[questionNum].options[questions[questionNum].correct])
+	//if (selection ==  questions[questionNum].options['correct'])
         score += 1;
+		
+		$('h5').remove();
+		$('li').remove();
+		$('input[type=submit]').remove();
+		
+	if (questionNum !=4) {
+	questionNum++;//THE "COUNTER" VARIABLE GETS INCREMENTED
+	showQuestion();
+	}
+	else {
+	  showScore();}
     
 	/*console.log(i,selection,questions[questionNum].correct, questions[questionNum].options[questions[questionNum].correct], score);*/
     
-	questionNum++;//THE "COUNTER" VARIABLE GETS INCREMENTED
-	nextQuestion();
+	//nextQuestion();
+	
 	}
  });
 } //end getAnswer function
 
-function nextQuestion() {
+/*function nextQuestion() {
  	$("#question-holder input[type=submit]").click(function() {
 		$('h5').remove();
 		$('li').remove();
 		$('input[type=submit]').remove();
 		
-	if (questionNum !=5) {
+	if (questionNum !=4) {
+	questionNum++;//THE "COUNTER" VARIABLE GETS INCREMENTED
 	showQuestion();
-	getAnswer();}
+	}
 	else {
 	  showScore();}
 	});
-}
+}*/
 
 /*THIS SHOWSCORE FUNCTION GETS CALLED AFTER ANSWERING QUESTION 5 AND AFTER CALLING GETANSWER FOR QUESTION 5 IN JQUERY SECTION*/
 function showScore() {
